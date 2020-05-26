@@ -1,0 +1,29 @@
+.logo__img{
+    width: 168px;
+    height: 115px;
+    & path{
+        fill: $color-dark;
+    }
+    &:hover{
+        & path{
+            fill: $color-hover;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+    }
+    &:active{
+        & path{
+            fill: $color-active;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+    }
+}
+//.page-logo{
+//    //margin-top: 255px;
+//}
+//.page-logo__img{
+//    width: 168px;
+//    height: 115px;
+//    & path{
+//        fill: $color-white;
+//    }
+//}

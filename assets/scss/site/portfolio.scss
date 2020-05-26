@@ -1,0 +1,168 @@
+.portfolio{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+}
+.portfolio__inner{
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 120px;
+    margin-bottom: 64px;
+    padding-bottom: 10px;
+}
+.portfolio__title-box{
+    margin-left: 440px;
+}
+.portfolio-nav{
+    padding: 10px;
+    transform: translate(250px, 24px);
+}
+.portfolio-nav__list{
+    display: flex;
+    @include font-cambria-bold();
+    font-size: 20px;
+    line-height: 23px;    
+}
+.portfolio-nav__item{
+    margin: 0 16px; 
+    padding: 0 8px 0;
+    border-bottom: 6px solid $color-transparent;
+    & p{
+        transform: translateY(10px);
+    }
+    & a{
+        color: $color-dark;
+        &:hover{
+            color: $color-hover;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        &:active{
+            color: $color-active;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+    }  
+    &--active{
+        border-bottom-color: $color-hover;
+        &:hover{
+            border-bottom-color: $color-transparent;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        & a:hover{
+            color: $color-hover;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        & a:active{
+            color: $color-active;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+    }
+}
+
+#portfolio-carousel{
+    height: 70vh;
+    background: blue;
+    & .owl-stage-outer{
+        height: 100%;
+        background: gold;
+    }
+    & .owl-stage{
+        position: relative;  
+        height: 100%; 
+    }
+    & .owl-item{
+        height: 100%;
+//  ////      opacity: 0.3;
+//  ////      transition: opacity 0.7s ease-in-out, transform 3s ease-in-out;
+    ////    &.center{
+    ////        background: red;
+    ////        opacity: 0.4;
+    ////    }
+        &.center{
+            background: pink;
+            opacity: 0.7;
+        }
+    }
+    //& .owl-item.center .portfolio__contacts-box.active{
+    //    display: flex;
+    //}
+    & .owl-item .portfolio__img{
+        height: 100%;
+        background-image: url(./assets/img/gallery/pic1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    & .owl-nav button.owl-prev,
+    & .owl-nav button.owl-next{
+        width: 48px;
+        height: 48px;
+        background-color: $color-dark;
+        outline: none;
+        transform: translateY(-30px);
+        &:hover{
+            background-color: $color-btn--hover;
+            outline: none;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        &:active{
+            background-color: $color-active;
+            outline: none;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+    }
+    & .owl-nav button.owl-prev{
+        position: absolute;    
+        right: 50%;
+        top: 100%;
+    }
+    & .owl-nav button.owl-next{
+        position: absolute;
+        left: 50%;
+        top: 100%;
+    }    
+}
+.portfolio__contacts{    
+    @include font-opensans-bold();
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-dark; 
+    min-height: 65px;
+}
+.portfolio__contacts-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;   
+    //display: none;
+}
+.portfolio__info{    
+    padding-bottom: 14px;
+}
+.portfolio__date{
+    @include font-corbel-italic();
+}
+.portfolio__share{
+    background: greenyellow;    
+    padding: 8px;
+    @include font-corbel-normal();
+    & a{
+        display: flex;
+    }
+    &:hover{
+        color: $color-hover;
+        outline: none;
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+    &:active{
+        background-color: $color-active;
+        outline: none;
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+    & p{
+        padding-right: 8px;
+        transform: translateY( 3px);
+    }       
+    & svg{
+        width: 20px;
+        height: 20px;
+    }
+}

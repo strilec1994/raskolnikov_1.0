@@ -1,0 +1,142 @@
+//-----Start block social in the navigation menu-------
+.social{
+    & a{
+        color: $color-dark;
+    }
+    & a:hover{
+        color: $color-hover;
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+    & a:active{
+        color: $color-active;
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+}
+.social__list{
+    display: flex; 
+}
+.social__item{
+        margin: 16px 8px;
+        &::before{
+            display: block;
+            content: '   ';
+            width: 12px;
+            height: 3px;           
+            background-color: $color-transparent;        
+            transform: translate(-14px, 13px);
+        }
+        &:hover::before{
+            background-color: $color-hover;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        &:active::before{
+            background-color: $color-active;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        &::after{
+            display: block;
+            content: '   ';
+            width: 12px;
+            height: 3px;          
+            background-color: $color-transparent;        
+            transform: translate(24px, -15px);
+        }
+        &:hover::after{
+            background-color: $color-hover;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        &:active::after{
+            background-color: $color-active;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }  
+}
+.social__img{
+    width: 22px;
+    height: 22px;
+    & path{
+        fill: $color-dark;
+    }
+    &:hover{
+        & path{
+            fill: $color-hover;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+    }
+    &:active{
+        & path{
+            fill: $color-active;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+    }
+}
+.social__number{
+        @include font-cambria-bold();
+        font-size: 18px;
+        line-height: 21px;
+        & a::before{
+            padding-left: 55px;
+            display: block;
+            content: '   ';
+            width: 25px;
+            height: 3px;
+            background-color: $color-transparent;        
+            transform: translate(-105px, 13px);
+        }
+        & a:hover::before{
+            background-color: $color-hover;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        & a:active::before{
+            background-color: $color-active;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+}
+//-----End block social in the navigation menu-------
+
+.contacts__container .social{
+    & a::before{
+        display: none;
+    }
+}
+
+//.page-social{
+//    margin-bottom: 40px;    
+//}
+//.page-social__list{
+//    display: flex;
+//    justify-content: center;
+//}
+//.page-social__item{
+//    margin: 16px 4px;
+//}
+//.page-social__img{
+//    width: 22px;
+//    height: 22px;
+//    & path{
+//        fill: $color-white;
+//    }
+//}
+//.page-social__number{
+//    text-align: center;
+//    & a{
+//        color: $color-white;
+//    }
+//}
+//
+////.page-social__number{
+////    & a:hover{
+////        color: $color-hover;
+////        font-size: 18px;
+////        line-height: 21px; 
+////        cursor: pointer;                     
+////    }
+////    & a:active{
+////        color: $color-active;
+////    }   
+////    & a:hover::before{
+////        @include line-hover();
+////    }
+////    & a:active::before{
+////        @include line-active();
+////    }
+////}

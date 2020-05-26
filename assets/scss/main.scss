@@ -1,0 +1,21 @@
+@import "./fonts/font-face.scss";
+@import "./reset.scss";
+
+
+@import "./variables/color-var.scss";
+@import "./mixins/font-mixins.scss";
+@import "./mixins/mixins.scss";
+
+@import "./scaffolding.scss";
+
+@import "./blocks/logo.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/social.scss";
+@import "./blocks/btn.scss";
+
+@import "./site/page-main.scss";
+@import "./site/about.scss";
+@import "./site/portfolio.scss";
+@import "./site/contacts.scss";
+@import "./site/reviews.scss";
+

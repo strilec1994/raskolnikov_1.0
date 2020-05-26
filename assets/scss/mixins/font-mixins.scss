@@ -1,0 +1,26 @@
+@mixin font-cambria-bold(){
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: bold;
+}
+@mixin font-cambria-normal(){
+    font-family: Cambria;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@mixin font-corbel-normal(){
+    font-family: Corbel;
+    font-style: normal;
+    font-weight: normal;
+}
+@mixin font-corbel-italic(){
+    font-family: Corbel;
+    font-style: italic;
+    font-weight: normal;
+}
+@mixin font-opensans-bold(){
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+}

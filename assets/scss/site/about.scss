@@ -1,0 +1,30 @@
+.about{    
+    display: flex;    
+    background: $color-background--about;    
+    padding-top: 85px;
+    margin-left: auto;
+    width: 65%;
+    height: 100%;
+}
+.about__image{
+    border: 2px solid $color-hover;
+    width: 212px;
+    height: 317px;
+    transform: translateX(-35px);
+    & img{
+        transform: translate(-12px, 12px);
+    }
+}
+.about__content{
+    width: 456px;
+    padding: 10px;
+    margin-left: 88px;
+}
+.about__desc{
+    margin-top: 40px;    
+
+    @include font-corbel-normal();
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-dark;
+}

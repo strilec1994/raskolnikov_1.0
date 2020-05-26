@@ -1,0 +1,98 @@
+.reviews{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: $color-background;
+    
+}
+.reviews__title-box{
+    position: absolute;
+    margin-left: 14px;
+    left: 50%;
+    transform: translate(-50%, 56px);
+}
+.reviews__carousel{
+    padding-top: 200px;
+    position: relative;
+    height: 100%;
+}
+
+//-------Start  Carousel------------
+#reviews-carousel {
+    & .owl-stage-outer{
+        min-height: 296px;
+    }
+    & .owl-stage{
+        display: flex;
+        align-items: stretch;
+        position: relative;    
+    }
+    & .owl-item{
+        margin-bottom: 120px;
+        margin-top: 30px;
+        background: $color-desc;
+        opacity: 0.3;
+        &.center{
+            opacity: 1;
+        }
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+    & .owl-nav{
+        position: absolute;
+        right: 504px;
+        top: -10px;
+    }
+    & .owl-nav button.owl-prev,
+    & .owl-nav button.owl-next{
+        width: 48px;
+        height: 48px;
+        background-color: $color-dark;
+        outline: none;        
+        &:hover{
+            background-color: #869791;
+            outline: none;
+        }
+        &:active{
+            background-color: $color-desc;
+            outline: none;
+        }
+    }
+}
+//-------End Carousel------------
+
+.reviews__desc{
+    & p {
+        @include font-corbel-italic();
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-dark;
+    }  
+    padding: 48px 40px 56px;
+} 
+.reviews__photo{
+    content: '';
+    background-image: url(./assets/img/avatar/img.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    right: 50%;
+    top: 100%;
+    transform: translate(50%, -40px);
+}
+.reviews__info{
+    @include font-opensans-bold();
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-dark;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    transform: translate(50%, 56px);
+    text-align: center;
+}
+.reviews__date{
+    @include font-corbel-italic();
+}

@@ -1,0 +1,55 @@
+//.btn__wrapper{
+//    margin-bottom: 40px;
+//}
+//.btn{
+//    width: 48px;
+//    height: 48px;
+//    border: none;
+//    background-color: $color-dark;
+//}
+//.btn__box{
+//    position: absolute;
+//    right: 72px;
+//    top: 154px;
+//}
+//.btn-reviews{
+//    border: none;
+//    width: 40px;
+//    height: 40px;
+//    background-color: transparent;
+//}
+//.btn-reviews--prev{
+//    position: absolute;
+//    top: -20px;
+//    left: 20px;
+//    z-index: 100;
+//}
+//.btn-reviews--next{
+//    position: absolute;
+//    top: 0;
+//    
+//    right: 0;
+////    bottom: -20px;
+//}
+.reviews__btn--prev{
+    content: '';
+    background-image: url(./assets/img/reviews--prev.svg);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+.reviews__btn--next{
+    content: '';
+    background-image: url(./assets/img/reviews--next.svg);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    transform: translateY(20px);
+    cursor: pointer;
+}
